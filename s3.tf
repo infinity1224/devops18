@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "one" {
-  bucket = "mustafaccit.devops.project.bucket"
+  bucket = "azmath.devops.project.bucket"
 }
 
 resource "aws_s3_bucket_ownership_controls" "two" {
@@ -26,7 +26,7 @@ status = "Enabled"
 terraform {
 backend "s3" {
 region = "us-east-1"
-bucket = "mustafaccit.devops.project.bucket"
+bucket = "azmath.devops.project.bucket"
 key = "prod/terraform.tfstate"
 }
 }
